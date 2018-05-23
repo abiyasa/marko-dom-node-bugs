@@ -177,28 +177,6 @@
         }
       }
     ],
-    "moreDetails": {
-      "textSpans": [
-        {
-          "text": "Weitere Details zu eBay Plus"
-        }
-      ],
-      "action": {
-        "type": "NAV",
-        "trackingList": [
-          {
-            "actionKinds": [
-              "NAV"
-            ],
-            "flushImmediately": false,
-            "eventProperty": {
-              "sid": "p2509714.m5240.l9741"
-            }
-          }
-        ],
-        "URL": "https://pages.de.paradise.qa.ebay.com/help/buy/ebay-plus.html"
-      }
-    },
     "meta": {
       "name": "questions",
       "trackingList": [
