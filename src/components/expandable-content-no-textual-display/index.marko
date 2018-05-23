@@ -1,0 +1,32 @@
+$ const model = input.model || {}
+$ const userClasses = input.classes || ""
+
+<macro renderQuestion(question, index)>
+  <div class="grid__cell grid__cell--1of16 grid__cell--sm-hidden"/>
+  <div class="expando expando-js grid__cell grid__cell--14of16" id="expando-${index}">
+    <button aria-controls="expando-${index}-section" aria-expanded="false"
+      on-click('onQuestionClick', 'expando-'+index)>
+      ${question.heading}
+    </button>
+
+    <div aria-live="polite">
+      <div id="expando-${index}-section">
+        <div class="accordianData">
+          <p>${question.body}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</macro>
+
+<div class="${userClasses} member-faq-sec">
+  <div class="grid__group">
+    <h2 class="grid__cell">${model.title}</h2>
+  </div>
+
+  <for(question in model.questions | status-var=loop)>
+    <div class="grid__group">
+      <renderQuestion(question, loop.getIndex()) />
+    </div>
+  </for>
+</div>

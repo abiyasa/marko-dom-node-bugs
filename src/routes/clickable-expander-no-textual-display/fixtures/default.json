@@ -1,0 +1,36 @@
+{
+  "model": {
+    "title": "Fragen & Antworten",
+    "questions": [
+      {
+        "heading": "Wie finde ich eBay Plus-Artikel?",
+        "body": "Mit dem eBay Plus-Filter finden Sie ganz schnell eBay Plus-Artikel. Sie erkennen diese Artikel am eBay Plus-Logo."
+      },
+      {
+        "heading": "Wie kann ich einen eBay Plus-Artikel zurückgeben?",
+        "body": "Alle eBay Plus-Artikel können Sie innerhalb von 30 Tagen kostenlos zurückschicken. Gehen Sie in Ihrer Kaufübersicht zum entsprechenden Artikel, wählen Sie „Diesen Artikel zurückgeben“ aus und folgen Sie der Anleitung. So kommen Sie ganz schnell an Ihr kostenloses Rücksendeetikett."
+      },
+      {
+        "heading": "Wie kann ich meine Mitgliedschaft kündigen?",
+        "body": "Sie können Ihre eBay Plus-Mitgliedschaft bis zum letzten Tag der Laufzeit ganz einfach online beenden."
+      },
+      {
+        "heading": "Ich habe eine Frage zu meinem Kauf.",
+        "body": "Sie finden Ihre aktuellen Käufe in unserer Hilfe. Wählen Sie aus, wo Sie Hilfe benötigen. Zur Hilfe"
+      }
+    ],
+    "meta": {
+      "name": "questions",
+      "trackingList": [
+        {
+          "eventFamily": "SHUB",
+          "eventAction": "VIEW",
+          "flushImmediately": false,
+          "eventProperty": {
+            "sid": "p2509714.m5240"
+          }
+        }
+      ]
+    }
+  }
+}
