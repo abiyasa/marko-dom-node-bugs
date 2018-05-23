@@ -1,0 +1,216 @@
+{
+  "model": {
+    "title": {
+      "textSpans": [
+        {
+          "text": "Fragen & Antworten"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "heading": {
+          "textSpans": [
+            {
+              "text": "Wie finde ich eBay Plus-Artikel?"
+            }
+          ],
+          "action": {
+            "type": "OPERATION",
+            "trackingList": [
+              {
+                "eventFamily": "SHUB",
+                "eventAction": "ACTN",
+                "actionKind": "EXPAND",
+                "flushImmediately": false,
+                "eventProperty": {
+                  "moduledtl": "mi:5240",
+                  "sid": "p2509714.m5240.l10084"
+                }
+              }
+            ]
+          }
+        },
+        "body": {
+          "textSpans": [
+            {
+              "text": "Mit dem eBay Plus-Filter finden Sie ganz schnell eBay Plus-Artikel. Sie erkennen diese Artikel am eBay Plus-Logo."
+            }
+          ]
+        }
+      },
+      {
+        "heading": {
+          "textSpans": [
+            {
+              "text": "Wie kann ich einen eBay Plus-Artikel zurückgeben?"
+            }
+          ],
+          "action": {
+            "type": "OPERATION",
+            "trackingList": [
+              {
+                "eventFamily": "SHUB",
+                "eventAction": "ACTN",
+                "actionKind": "EXPAND",
+                "flushImmediately": false,
+                "eventProperty": {
+                  "moduledtl": "mi:5240",
+                  "sid": "p2509714.m5240.l9743"
+                }
+              }
+            ]
+          }
+        },
+        "body": {
+          "textSpans": [
+            {
+              "text": "Alle eBay Plus-Artikel können Sie innerhalb von 30 Tagen kostenlos zurückschicken. Gehen Sie in Ihrer "
+            },
+            {
+              "text": "Kaufübersicht",
+              "action": {
+                "type": "NAV",
+                "trackingList": [
+                  null
+                ],
+                "URL": "https://www.de.paradise.qa.ebay.com/myb/PurchaseHistory"
+              }
+            },
+            {
+              "text": " zum entsprechenden Artikel, wählen Sie „Diesen Artikel zurückgeben“ aus und folgen Sie der Anleitung. So kommen Sie ganz schnell an Ihr kostenloses Rücksendeetikett."
+            }
+          ]
+        }
+      },
+      {
+        "heading": {
+          "textSpans": [
+            {
+              "text": "Wie kann ich meine Mitgliedschaft kündigen?"
+            }
+          ],
+          "action": {
+            "type": "OPERATION",
+            "trackingList": [
+              {
+                "eventFamily": "SHUB",
+                "eventAction": "ACTN",
+                "actionKind": "EXPAND",
+                "flushImmediately": false,
+                "eventProperty": {
+                  "moduledtl": "mi:5240",
+                  "sid": "p2509714.m5240.l9746"
+                }
+              }
+            ]
+          }
+        },
+        "body": {
+          "textSpans": [
+            {
+              "text": "Sie können Ihre eBay Plus-Mitgliedschaft bis zum letzten Tag der Laufzeit ganz einfach "
+            },
+            {
+              "text": "online beenden",
+              "action": {
+                "type": "NAV",
+                "trackingList": [
+                  null
+                ],
+                "URL": "https://www.signup.ebayplus.de.paradise.qa.ebay.com/eplusweb/memberhome"
+              }
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      },
+      {
+        "heading": {
+          "textSpans": [
+            {
+              "text": "Ich habe eine Frage zu meinem Kauf."
+            }
+          ],
+          "action": {
+            "type": "OPERATION",
+            "trackingList": [
+              {
+                "eventFamily": "SHUB",
+                "eventAction": "ACTN",
+                "actionKind": "EXPAND",
+                "flushImmediately": false,
+                "eventProperty": {
+                  "moduledtl": "mi:5240",
+                  "sid": "p2509714.m5240.l10085"
+                }
+              }
+            ]
+          }
+        },
+        "body": {
+          "textSpans": [
+            {
+              "text": "Sie finden Ihre aktuellen Käufe in unserer Hilfe. Wählen Sie aus, wo Sie Hilfe benötigen. "
+            },
+            {
+              "text": "Zur Hilfe",
+              "action": {
+                "type": "NAV",
+                "trackingList": [
+                  {
+                    "actionKinds": [
+                      "NAV"
+                    ],
+                    "flushImmediately": false,
+                    "eventProperty": {
+                      "sid": "p2509714.m5240.l10086"
+                    }
+                  }
+                ],
+                "URL": "https://ocsnext.de.paradise.qa.ebay.com/ocs/home"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "moreDetails": {
+      "textSpans": [
+        {
+          "text": "Weitere Details zu eBay Plus"
+        }
+      ],
+      "action": {
+        "type": "NAV",
+        "trackingList": [
+          {
+            "actionKinds": [
+              "NAV"
+            ],
+            "flushImmediately": false,
+            "eventProperty": {
+              "sid": "p2509714.m5240.l9741"
+            }
+          }
+        ],
+        "URL": "https://pages.de.paradise.qa.ebay.com/help/buy/ebay-plus.html"
+      }
+    },
+    "meta": {
+      "name": "questions",
+      "trackingList": [
+        {
+          "eventFamily": "SHUB",
+          "eventAction": "VIEW",
+          "flushImmediately": false,
+          "eventProperty": {
+            "sid": "p2509714.m5240"
+          }
+        }
+      ]
+    }
+  }
+}

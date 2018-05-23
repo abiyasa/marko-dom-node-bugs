@@ -1,0 +1,27 @@
+<site-layout>
+  <@title>
+    Expander
+  </@title>
+
+  <@content>
+    <section>
+      <h2>Bug on Expander button</h2>
+      <p>
+      The component below should be clickable which will expand to show its hidden content.
+      However, there is JS error triggered (see browser console) so the client-side of this
+      component does not work.
+
+      <code>
+      Uncaught TypeError: Cannot read property 'parentNode' of null
+      at init-components-browser.js:259
+      </code>
+      </p>
+
+      <p>This component uses <a href="/ui-textual-display">ui-textual-display</a> to display buttons and text content</p>
+
+      <div.grid>
+        <p><expandable-content ${input.params.model} /></p>
+      </div.grid>
+    </section>
+  </@content>
+</site-layout>

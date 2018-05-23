@@ -1,0 +1,22 @@
+<site-layout>
+  <@title>
+    Expander
+  </@title>
+
+  <@content>
+    <section>
+      <h2>Non-clickable Expander button</h2>
+      <p>
+      The component is simliar with <a href="/clickable-expander">Expander button</a> but without client-side behaviour.
+      Its hidden content is shown and the expander button does nothing if it's clicked.
+      This demo is to show that there is no JS error if the component.js file is removed.
+      </p>
+
+      <p>This component uses <a href="/ui-textual-display">ui-textual-display</a> to display buttons and text content</p>
+
+      <div.grid>
+        <p><non-expandable-content ${input.params.model} /></p>
+      </div.grid>
+    </section>
+  </@content>
+</site-layout>

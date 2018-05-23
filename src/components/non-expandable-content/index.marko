@@ -1,0 +1,36 @@
+$ const model = input.model || {}
+$ const userClasses = input.classes || ""
+
+<macro renderQuestion(question, index)>
+  <div class="grid__cell grid__cell--1of16 grid__cell--sm-hidden"/>
+  <div class="expando expando-js grid__cell grid__cell--14of16" id="expando-${index}">
+
+    <ui-textual-display model=question.heading
+      attr={ "aria-controls": "expando-${index}-section", "aria-expanded": "true" }/>
+
+    <div aria-live="polite">
+      <div id="expando-${index}-section">
+        <div class="accordianData">
+          <p><ui-textual-display model=question.body /></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</macro>
+
+<div class="${userClasses} member-faq-sec">
+  <div class="grid__group">
+    <h2 class="grid__cell"><ui-textual-display model=model.title /></h2>
+  </div>
+
+  <for(question in model.questions | status-var=loop)>
+    <div class="grid__group">
+      <renderQuestion(question, loop.getIndex()) />
+    </div>
+  </for>
+
+  <div class="grid__group">
+    <div class="grid__cell grid__cell--1of16 grid__cell--sm-hidden"/>
+    <ui-textual-display model=model.moreDetails classes="view-more grid__cell grid__cell--14of16" />
+  </div>
+</div>
