@@ -1,0 +1,58 @@
+{
+  "model": {
+    "triggerButton": {
+      "textSpans": [
+        {
+          "text": "Click to show dialog"
+        }
+      ]
+    },
+    "confirmationDialog": {
+      "cancel": {
+        "accessibilityText": "Close dialog",
+        "action": {
+          "type": "OPERATION",
+          "name": "close-dialog"
+        }
+      },
+      "confirmationContent": {
+        "title": {
+          "textSpans": [
+            {
+              "text": "Are you sure that you want to confirm this dialog?"
+            }
+          ]
+        },
+        "mainContent": {
+          "textSpans": [
+            {
+              "text": "After closing this dialog, you won't see the dialog"
+            }
+          ]
+        },
+        "confirmButton": {
+          "textSpans": [
+            {
+              "text": "Yes, click!"
+            }
+          ],
+          "action": {
+            "type": "OPERATION",
+            "name": "confirm-click"
+          }
+        },
+        "cancelButton": {
+          "textSpans": [
+            {
+              "text": "No"
+            }
+          ],
+          "action": {
+            "type": "OPERATION",
+            "name": "cancel"
+          }
+        }
+      }
+    }
+  }
+}

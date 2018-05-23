@@ -1,0 +1,35 @@
+<div role="dialog"
+  class="dialog dialog-open-${state.open}"
+  aria-labelledby:scoped="header"
+  aria-hidden=(state.open?"false":"true")
+  on-keyup("closeOnEscape")
+  on-click("closeOnBackgroundClick")
+  key="dialog">
+
+  <div role="document">
+    <header>
+      <button
+        class="dialog__close"
+        aria-label=input.closeAccessibilityText
+        type="button"
+        key="closeButton"
+        on-click("closeDialog")>
+
+        <span aria-hidden="true">&times;</span>
+      </button>
+
+      <h2 id:scoped="header">
+        <if(input.title)>
+          <include(input.title)/>
+        </if>
+      </h2>
+    </header>
+
+    <!-- Dialog content. -->
+    <div>
+      <if(input.body)>
+        <include(input.body)/>
+      </if>
+    </div>
+  </div>
+</div>

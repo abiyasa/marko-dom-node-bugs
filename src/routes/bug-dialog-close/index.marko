@@ -1,0 +1,47 @@
+<site-layout>
+  <@title>
+    Dialog
+  </@title>
+
+  <@content>
+    <section>
+      <h2>Bug on closing dialog</h2>
+      <p>
+      The button below should trigger a dialog.
+
+      How to reproduce the bug:
+
+      <ol>
+        <li>Show the dialog by clicking the trigger button below</li>
+        <li>Close the dialog by clicking Yes on Cancel button</li>
+        <li>Click again the trigger button again to show the dialog</li>
+      </ol>
+
+      This will trigger JS error (see browser console).
+
+      <code>
+      Component.js:542 Uncaught TypeError: Cannot read property 'nextSibling' of null
+        at Component.___forEachNode (Component.js:542)
+        at Component.___detach (Component.js:533)
+        at morphChildren (index.js:329)
+        at morphEl (index.js:790)
+        at morphChildren (index.js:384)
+        at morphEl (index.js:790)
+        at morphChildren (index.js:384)
+        at morphEl (index.js:790)
+        at morphChildren (index.js:384)
+        at morphEl (index.js:790)
+      </code>
+      </p>
+
+      <p>
+      However, if you close the dialog using the 'X' button or clicking outside the dialog area,
+      you will not get the error
+      </p>
+
+      <p>This component uses <a href="/ui-textual-display">ui-textual-display</a> inside the dialog content</p>
+
+      <click-for-dialog ${input.params.model} />
+    </section>
+  </@content>
+</site-layout>

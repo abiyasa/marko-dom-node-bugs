@@ -1,0 +1,42 @@
+$ {
+  const model = input.model || {};
+  const confirmationDialog = model.confirmationDialog;
+  const dialogContent = state.dialogContent;
+}
+
+<div>
+  <p>
+    <button type="button" class="btn btn--primary btn--large"
+      on-click('openConfirmationDialog')>
+
+      <ui-textual-display model=model.triggerButton />
+    </button>
+  </p>
+
+  <ui-dialog if(confirmationDialog)
+    key="confirmationDialog"
+    closeAccessibilityText=confirmationDialog.cancel.accessibilityText>
+
+    <@title>
+      <if(dialogContent)>
+        <ui-textual-display model=dialogContent.title />
+      </if>
+    </@title>
+
+    <@body>
+      <if(dialogContent)>
+        <div class="dialog-content">
+          <p><ui-textual-display model=dialogContent.mainContent /></p>
+        </div>
+
+        <div class="dialog-button-bar">
+          <ui-textual-display model=dialogContent.confirmButton classes="btn btn--primary"
+            disabled=state.disablePrimaryButton on-click('onCancelClick') />
+
+          <ui-textual-display model=dialogContent.cancelButton classes="btn btn--secondary"
+            on-click('onCancelClick') />
+        </div>
+      </if>
+    </@body>
+  </ui-dialog>
+</div>

@@ -1,0 +1,56 @@
+.dialog[role="dialog"] {
+  backface-visibility: hidden;
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.dialog[role="dialog"][aria-hidden="false"] {
+  z-index: 100000;
+}
+
+.dialog[role="dialog"][aria-hidden="true"] {
+  display: none;
+}
+
+.dialog[role="dialog"] > [role="document"] {
+  margin: auto;
+  max-width: 712px;
+  background: #f4f4f4 none repeat scroll 0 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 1.5rem;
+  position: relative;
+  width: 100%;
+}
+
+.dialog[role="dialog"] > [role="document"] h2 {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.dialog[role="dialog"] .dialog__close {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  float: right;
+  padding: 0;
+  cursor: pointer;
+}
+
+.dialog-open-true {
+  display: block;
+}
+
+.dialog-open-false {
+  display: none;
+}
