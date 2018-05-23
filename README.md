@@ -1,52 +1,32 @@
-# Marko Starter Demo
-This repo demos the basic features of [`marko-starter`](https://github.com/marko-js/marko-starter).
+# Marko Bugs
+
+This repo demos Marko component bugs we experienced.
 
 ## Install
 
+We use Node.js v8.11.1, Marko v4.9.7, and the latest Yarn.
+
 ```bash
-npm install
+yarn install
 ```
 
 ## Starting the server
 
 ```bash
-npm start
+yarn start
 ```
 
-Start the server in production mode (minification enabled, etc.):
+Go to `http://localhost:8080/`.
 
-```bash
-NODE_ENV=production npm start
-```
+## Bug Demos
 
-## Build a static site
-Build the project in production mode:
+### Client-side error on expander button
 
-```bash
-npm run build
-```
+We got client-side error on expandable/accordion content.
 
-By default, the generated static site will be placed in `dist/`.
+To re-produce the bug: Run the server and go to:
 
-## Feature Demos
+- `http://localhost:8080/clickable-expander`.
+- or `http://localhost:8080/clickable-expander-no-textual-display`
 
-### Live reload
-
-Change a file and the server will restart and the browser will refresh.  Hot reload is enabled for certain files.
-
-### Components
-
-See example components and how they can be scoped to pages or the whole site.
-
-### Routing
-
-Learn to create routes and use route parameters.
-
-### Layouts
-
-Learn to create components that can be passed content and include that content in their own template.
-
-### Styles and Images
-
-Learn how to use styles within a component and how to use resources (like images) in a component.
-
+However, if we remove the client-side behaviour (no `component.js` and click event handlers), the error is gone: `http://localhost:8080/non-clickable-expander`
