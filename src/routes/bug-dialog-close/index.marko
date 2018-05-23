@@ -13,7 +13,7 @@
 
       <ol>
         <li>Show the dialog by clicking the trigger button below</li>
-        <li>Close the dialog by clicking Yes on Cancel button</li>
+        <li>Close the dialog by clicking Yes or No button</li>
         <li>Click again the trigger button again to show the dialog</li>
       </ol>
 
@@ -34,10 +34,17 @@
       </code>
       </p>
 
-      <p>
-      However, if you close the dialog using the 'X' button or clicking outside the dialog area,
-      you will not get the error
-      </p>
+      <h2>However, there cases where the bug will not occur</h2>
+
+      <ol>
+        <li>
+        If you close the dialog using the 'X' button or clicking outside the dialog area, you will not get the error
+        </li>
+        <li>
+        If the dialog content does not content <a href="/ui-textual-display">ui-textual-display</a>.
+        See <a href="/bug-dialog-close-no-textual-display">this demo page</a> (without bug).
+        </li>
+      </ol>
 
       <p>This component uses <a href="/ui-textual-display">ui-textual-display</a> inside the dialog content</p>
 

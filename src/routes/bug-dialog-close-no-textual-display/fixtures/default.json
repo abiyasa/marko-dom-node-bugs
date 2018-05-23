@@ -1,0 +1,20 @@
+{
+  "model": {
+    "triggerButton": "Click to show dialog",
+    "confirmationDialog": {
+      "cancel": {
+        "accessibilityText": "Close dialog",
+        "action": {
+          "type": "OPERATION",
+          "name": "close-dialog"
+        }
+      },
+      "confirmationContent": {
+        "title": "Are you sure that you want to confirm this dialog?",
+        "mainContent": "After closing this dialog, you won't see the dialog",
+        "confirmButton": "Yes, click!",
+        "cancelButton": "No"
+      }
+    }
+  }
+}
