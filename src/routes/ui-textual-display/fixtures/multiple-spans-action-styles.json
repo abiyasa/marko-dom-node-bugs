@@ -1,0 +1,15 @@
+{
+  "model": {
+    "textSpans": [{
+      "text": "span 1",
+      "styles": [ "POSITIVE" ]
+    }, {
+      "text": "span 2",
+      "styles": [ "EMPHASIS" ]
+    }],
+    "action": {
+      "type": "NAV",
+      "URL": "http://www.ebay.com"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model": {
+    "textSpans": [
+      {
+        "text": "nav test"
+      }
+    ],
+    "action": {
+      "type": "NAV",
+      "URL": "http://www.ebay.com"
+    }
+  },
+  "classes": "class1 class2"
+}

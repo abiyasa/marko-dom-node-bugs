@@ -1,0 +1,21 @@
+{
+  "model": {
+    "textSpans": [
+      {
+        "text": "tracked link"
+      }
+    ],
+    "action": {
+      "type": "NAV",
+      "URL": "http://www.ebay.com",
+      "trackingList": [{
+        "eventFamily": "SHUB",
+        "eventAction": "ACTN",
+        "flushImmediately": false,
+        "eventProperty": {
+          "sid": "p123456.m7890.l1234"
+        }
+      }]
+    }
+  }
+}

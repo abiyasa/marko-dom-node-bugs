@@ -1,0 +1,12 @@
+{
+  "model": {
+    "textSpans": [
+      {
+        "text": "operation test"
+      }
+    ],
+    "action": {
+      "type": "OPERATION"
+    }
+  }
+}

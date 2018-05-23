@@ -1,4 +1,4 @@
-exports.path = "/hello/:name";
+exports.path = "/bug-body-only";
 
 // The following is used when doing static builds
 // to generate all pages for all enumerated params

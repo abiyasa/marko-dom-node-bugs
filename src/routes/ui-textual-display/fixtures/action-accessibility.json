@@ -1,0 +1,13 @@
+{
+  "model": {
+    "textSpans": [
+      {
+        "text": "accessibility test"
+      }
+    ],
+    "accessibilityText": " – testing accessibility",
+    "action": {
+      "type": "OPERATION"
+    }
+  }
+}

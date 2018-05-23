@@ -1,0 +1,27 @@
+
+{
+  "model": {
+    "textSpans": [
+      {
+        "text": "question-moreDetails"
+      }
+    ],
+    "action": {
+      "type": "NAV",
+      "trackingList": [
+        {
+          "actionKinds": [
+            "NAV"
+          ],
+          "flushImmediately": false,
+          "eventProperty": {
+            "sid": "p2505673.m5240.l9741"
+          }
+        }
+      ],
+      "URL": "http://pages.ebay.de/help/buy/ebay-plus.html"
+    }
+  },
+  "classes": "cta-btn cta-btn--large cta-btn--eplus-red",
+  "ds6Cta": true
+}

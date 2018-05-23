@@ -1,0 +1,14 @@
+{
+  "model": {
+    "textSpans": [
+      {
+        "text": "disabled nav test"
+      }
+    ],
+    "action": {
+      "type": "NAV",
+      "URL": "http://www.ebay.com/sh"
+    }
+  },
+  "disabled": true
+}

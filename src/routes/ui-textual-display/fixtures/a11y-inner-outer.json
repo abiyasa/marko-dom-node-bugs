@@ -1,0 +1,18 @@
+{
+  "model": {
+    "textSpans": [
+      {
+        "text": "accessibility test inside text span",
+        "accessibilityText": " – testing accessibility inside"
+      },
+      {
+        "text": "span 2"
+      }
+    ],
+    "action": {
+      "type": "NAV",
+      "URL": "http://www.ebay.com"
+    },
+    "accessibilityText": " – testing accessibility outside"
+  }
+}

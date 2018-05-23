@@ -1,0 +1,14 @@
+{
+  "model": {
+    "textSpans": [
+      {
+        "text": "disabled operation test"
+      }
+    ],
+    "action": {
+      "type": "OPERATION",
+      "URL": "http://www.ebay.com"
+    }
+  },
+  "disabled": true
+}

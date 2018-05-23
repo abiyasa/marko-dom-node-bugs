@@ -1,0 +1,15 @@
+{
+  "model": {
+    "textSpans": [
+      {
+        "text": "nav test"
+      }
+    ],
+    "accessibilityText": " – opens in a new window or tab",
+    "action": {
+      "type": "NAV",
+      "name": "newWindow",
+      "URL": "http://www.ebay.com"
+    }
+  }
+}

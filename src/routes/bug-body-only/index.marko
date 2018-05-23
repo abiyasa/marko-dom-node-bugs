@@ -1,0 +1,23 @@
+<site-layout>
+  <@title>
+    body-only
+  </@title>
+
+  <@content>
+    <section>
+      <h2>Body Only Bugs</h2>
+
+      <h3>With span container</h3>
+      <p><body-only-item showSpan=true text='test'/></p>
+
+      <h3>Without span container</h3>
+      <p><body-only-item showSpan=false text='test'/></p>
+
+      <h3>browser side rendering - With span container</h3>
+      <p key="container-1"></p>
+
+      <h3>browser side rendering - Without span container</h3>
+      <p key="container-2"></p>
+    </section>
+  </@content>
+</site-layout>

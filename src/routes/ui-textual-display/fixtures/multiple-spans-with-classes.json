@@ -1,0 +1,20 @@
+{
+  "model": {
+    "textSpans": [
+      {
+        "text": "Alle eBay Plus-Artikel können Sie innerhalb von 30 Tagen kostenlos zurückschicken. Gehen Sie in Ihrer "
+      },
+      {
+        "text": "Kaufübersicht",
+        "action": {
+          "type": "NAV",
+          "URL": "https://www.de.paradise.qa.ebay.com/myb/PurchaseHistory"
+        }
+      },
+      {
+        "text": " zum entsprechenden Artikel, wählen Sie „Diesen Artikel zurückgeben“ aus und folgen Sie der Anleitung. So kommen Sie ganz schnell an Ihr kostenloses Rücksendeetikett."
+      }
+    ]
+  },
+  "classes": "view-more grid__cell grid__cell--14of16"
+}

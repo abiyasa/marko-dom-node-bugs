@@ -1,0 +1,14 @@
+{
+  "model": {
+    "textSpans": [{
+      "text": "style test",
+      "styles": [
+        "STRIKETHROUGH",
+        "NEGATIVE"
+      ]
+    }],
+    "action": {
+      "type": "OPERATION"
+    }
+  }
+}

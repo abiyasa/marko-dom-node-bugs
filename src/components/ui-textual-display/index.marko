@@ -1,0 +1,52 @@
+import { hasStyles, styleClasses, singleSpanStyles, needsWrapper } from './helpers';
+import { userClasses } from '../../utils/component';
+
+<macro a11y(data)>
+  $ const a11yText = data.accessibilityText
+  <span.clipped if(a11yText)>${a11yText}</span>
+</macro>
+
+<macro textSpans(model)>
+  <for(textSpan in textSpans)>
+    <ui-action action=textSpan.action
+               classes=styleClasses(textSpan.styles)
+               needsWrapper=needsWrapper(textSpan, model)
+               on-click('onClick')>
+      ${textSpan.text}
+      <a11y(textSpan)/>
+    </ui-action>
+  </for>
+</macro>
+
+<!-- main template -->
+$ console.log(input);
+$ const model = input.model || {}
+$ const textSpans = model.textSpans || []
+$ const hasSingleSpan = textSpans.length === 1
+$ const customClasses = userClasses(input.classes);
+$ const styles = hasSingleSpan ? singleSpanStyles(textSpans) : []
+$ const classes = styleClasses(styles).concat(customClasses)
+$ const ds6Cta = input.ds6Cta;
+
+<ui-action action=model.action classes=classes on-click('onClick')
+  disabled=input.disabled attr=input.attr type=input.type
+  needsWrapper=(customClasses.length > 0)>
+
+  <if(ds6Cta)>
+    <span class="cta-btn__cell">
+      <span>
+        <textSpans(model)/>
+        <a11y(model)/>
+      </span>
+      <svg aria-hidden="true" class="cta-btn__icon" focusable="false" height="8" width="8">
+        <use xlink:href="#icon-arrow-cta"></use>
+      </svg>
+    </span>
+  </if>
+  <else>
+    <textSpans(model)/>
+    <a11y(model)/>
+  </else>
+</ui-action>
+
+<!-- /main template -->

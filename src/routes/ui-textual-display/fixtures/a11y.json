@@ -1,0 +1,8 @@
+{
+  "model": {
+    "textSpans": [{
+      "text": "accessibility test outer span"
+    }],
+    "accessibilityText": " – testing accessibility"
+  }
+}

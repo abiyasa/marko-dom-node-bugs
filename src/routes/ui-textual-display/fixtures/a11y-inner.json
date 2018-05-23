@@ -1,0 +1,10 @@
+{
+  "model": {
+    "textSpans": [
+      {
+        "text": "accessibility test inside text span",
+        "accessibilityText": " – testing accessibility"
+      }
+    ]
+  }
+}

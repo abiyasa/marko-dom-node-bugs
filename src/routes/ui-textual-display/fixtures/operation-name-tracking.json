@@ -1,0 +1,25 @@
+{
+  "model": {
+    "textSpans": [
+      {
+        "text": "operation test"
+      }
+    ],
+    "action": {
+      "type": "OPERATION",
+      "name": "cancel-membership",
+      "trackingList": [
+        {
+          "eventFamily": "EPLH",
+          "eventAction": "ACTN",
+          "actionKind": "SHOWDIALOG",
+          "flushImmediately": false,
+          "eventProperty": {
+            "moduledtl": "5237",
+            "sid": "p2505673.m5237.l9738"
+          }
+        }
+      ]
+    }
+  }
+}

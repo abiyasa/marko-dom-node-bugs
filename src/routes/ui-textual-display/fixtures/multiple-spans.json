@@ -1,0 +1,9 @@
+{
+  "model": {
+    "textSpans": [{
+        "text": "span 1"
+    }, {
+        "text": "span 2"
+    }]
+  }
+}

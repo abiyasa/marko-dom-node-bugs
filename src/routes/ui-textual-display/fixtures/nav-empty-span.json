@@ -1,0 +1,8 @@
+{
+  "model": {
+    "action": {
+      "type": "NAV",
+      "URL": "/sh/mystore"
+    }
+  }
+}

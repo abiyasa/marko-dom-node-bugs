@@ -1,0 +1,19 @@
+<site-layout>
+  <@title>
+    ui-textual-display
+  </@title>
+
+  <@content>
+    <section>
+      <h2>Textual Display</h2>
+      <p>Rendering textual display with fixtures</p>
+
+      <for(fixture in input.params.fixtures)>
+        <h3>${fixture.name}</h3>
+
+        $ data = fixture.data || {};
+        <ui-textual-display ...data />
+      </for>
+    </section>
+  </@content>
+</site-layout>

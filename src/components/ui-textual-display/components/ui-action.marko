@@ -1,0 +1,33 @@
+import { trackingSid } from '../helpers';
+
+$ {
+  const body = input.renderBody;
+  const classes = input.classes;
+  const needsWrapper = input.needsWrapper;
+
+  const action = input.action || {};
+  const url = action.URL;
+  const type = action.type;
+  const isLink = type === 'NAV';
+  const isButton = type === 'OPERATION';
+  const buttonType = input.type || 'button';
+  const disabled = input.disabled;
+}
+
+<if(isLink)>
+  $ const target = (action.name === 'newWindow') ? '_blank' : false;
+
+  <a href=url aria-disabled=(input.disabled && 'true') _sp=trackingSid(action) class=classes target=target ${input.attr}>
+    <include(body)/>
+  </a>
+</if>
+<else-if(isButton)>
+  <button type=buttonType class=classes data-action-name=action.name disabled=input.disabled ${input.attr} on-click('onClick')>
+    <include(body)/>
+  </button>
+</else-if>
+<else>
+  <span class=classes ${input.attr} body-only-if(!needsWrapper)>
+    <include(body)/>
+  </span>
+</else>
