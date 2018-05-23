@@ -1,4 +1,4 @@
-exports.path = '/non-clickable-expander';
+exports.path = `/${require('path').basename(__dirname)}`;
 
 const template = require('./index.marko');
 exports.handler = (input, out) => {

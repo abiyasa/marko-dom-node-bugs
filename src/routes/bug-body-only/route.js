@@ -1,4 +1,4 @@
-exports.path = "/bug-body-only";
+exports.path = `/${require('path').basename(__dirname)}`;
 
 // The following is used when doing static builds
 // to generate all pages for all enumerated params
