@@ -24,9 +24,30 @@ Go to `http://localhost:8080/`.
 
 We got client-side error on expandable/accordion content.
 
+```
+Uncaught TypeError: Cannot read property 'parentNode' of null
+at init-components-browser.js:259
+...
+```
+
 To re-produce the bug: Run the server and go to:
 
 - `http://localhost:8080/clickable-expander`.
 - or `http://localhost:8080/clickable-expander-no-textual-display`
 
 However, if we remove the client-side behaviour (no `component.js` and click event handlers), the error is gone: `http://localhost:8080/non-clickable-expander`
+
+### Client-side error on dialog component
+
+We got client-side error on clsoign and showing dialog component:
+
+```
+Component.js:542 Uncaught TypeError: Cannot read property 'nextSibling' of null
+  at Component.___forEachNode (Component.js:542)
+  at Component.___detach (Component.js:533)
+...
+```
+
+To re-produce the bug: Run the server and go to:
+
+- `http://localhost:8080/bug-dialog-close`.
