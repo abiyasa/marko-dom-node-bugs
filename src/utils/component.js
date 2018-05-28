@@ -4,7 +4,9 @@
  * @param classes
  */
 function userClasses(classes = []) {
-  return (Array.isArray(classes) ? classes : classes.split(' ')).filter(nonEmptyClass);
+  return (Array.isArray(classes) ? classes : classes.split(" ")).filter(
+    nonEmptyClass
+  );
 }
 
 function nonEmptyClass(classString) {
