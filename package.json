@@ -11,7 +11,9 @@
     "eslint": "^4.2.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-prettier": "^2.1.2",
-    "prettier": "^1.5.2"
+    "gh-pages": "^1.1.0",
+    "prettier": "^1.5.2",
+    "rimraf": "^2.6.2"
   },
   "dependencies": {
     "marko": "^4.9.5",
@@ -19,10 +21,14 @@
   },
   "scripts": {
     "start": "marko-starter server",
+    "prebuild": "npm run clean",
     "build": "NODE_ENV=production marko-starter build",
+    "predeploy": "npm build",
+    "deploy": "gh-pages -d dist",
     "serve-static": "NODE_ENV=production marko-starter serve-static",
     "lint": "eslint src/",
-    "test": "npm run lint",
+    "test": "npm lint",
+    "clean": "rimraf dist/ .cache/",
     "prettier": "prettier src/**/*.{js,css,less} *.js --write"
   },
   "eslintConfig": {
