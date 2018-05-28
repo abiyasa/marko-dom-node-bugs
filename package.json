@@ -26,6 +26,9 @@
     "prettier": "prettier src/**/*.{js,css,less} *.js --write"
   },
   "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
     "extends": [
       "eslint:recommended",
       "prettier"

@@ -1,7 +1,7 @@
 const bodyOnlyItem = require('./components/body-only-item');
 
 module.exports = class {
-  onMount(event) {
+  onMount() {
     bodyOnlyItem
       .render({ showSpan: true, text: 'test' })
       .then(result => {
