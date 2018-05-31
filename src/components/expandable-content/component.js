@@ -1,19 +1,23 @@
-const { toggleBooleanAttribute, toggleClass } = require('./helper');
-
 module.exports = {
-  onCreate() { },
+  onCreate(input) {
+    const model = input.model || {};
+    const questions = model.questions || [];
 
-  onQuestionClick(selectedElementId, event) {
-    event.preventDefault();
-    const element = document.getElementById(selectedElementId);
-    const btn = element && element.querySelector('button');
+    this.state = {
+      questions: questions.map(createQuestionState)
+    };
+  },
 
-    if (btn) {
-      toggleBooleanAttribute(btn, 'aria-expanded');
-    }
+  onQuestionClick(question) {
+    // toggle expand/collpase
+    question.isExpanded = !question.isExpanded;
 
-    if (element) {
-      toggleClass(element, 'expanded');
-    }
+    // need to do this due state changes only detectable 1-level deep
+    // TODO use immutable list
+    this.setStateDirty('questions');
   }
 };
+
+function createQuestionState(rawQuestion) {
+  return Object.assign({ isExpanded: false }, rawQuestion);
+}

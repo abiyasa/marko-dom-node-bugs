@@ -1,25 +1,21 @@
 $ const model = input.model || {}
-$ const userClasses = input.classes || ""
 
 <macro renderQuestion(question, index)>
+  $ const contentId = 'expander-content-' + index;
+
   <div class="grid__cell grid__cell--1of16 grid__cell--sm-hidden"/>
-  <div class="expando expando-js grid__cell grid__cell--14of16" id="expando-${index}">
-
+  <div class="expando grid__cell grid__cell--14of16">
     <ui-textual-display model=question.heading
-      attr={ "aria-controls": "expando-${index}-section", "aria-expanded": "false" }
-      on-click('onQuestionClick', 'expando-'+index)/>
+      attr={ "aria-controls": "${contentId}", "aria-expanded": question.isExpanded ? "true" : "false" }
+      on-click('onQuestionClick', question) />
 
-    <div aria-live="polite">
-      <div id="expando-${index}-section">
-        <div class="accordianData">
-          <p><ui-textual-display model=question.body /></p>
-        </div>
-      </div>
+    <div aria-live="polite" id="${contentId}">
+      <p><ui-textual-display model=question.body /></p>
     </div>
   </div>
 </macro>
 
-<div class="${userClasses} member-faq-sec">
+<div class="member-faq-sec">
   <div class="grid__group">
     <h2 class="grid__cell"><ui-textual-display model=model.title /></h2>
   </div>
