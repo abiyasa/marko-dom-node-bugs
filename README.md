@@ -1,6 +1,6 @@
 # Marko Bugs
 
-This repo demos Marko component bugs we experienced.
+This repo is a place to reproduce DOM node bugs on [Marko](https://markojs.com/) component.
 
 ## Install
 
@@ -51,3 +51,7 @@ Component.js:542 Uncaught TypeError: Cannot read property 'nextSibling' of null
 To re-produce the bug: Run the server and go to:
 
 - `http://localhost:8080/bug-dialog-close`.
+
+However, if we simplified the dialog (simple text instead of nested component Textual Display),
+the error is gone (`http://localhost:8080/bug-dialog-close-no-textual-display`)
+

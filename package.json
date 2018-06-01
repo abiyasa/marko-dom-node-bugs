@@ -1,10 +1,10 @@
 {
-  "name": "marko-bug",
+  "name": "marko-bugs",
   "version": "0.1.0",
-  "description": "A place where Marko bug is exposed",
+  "description": "A place to expose Marko bugs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/marko-js-samples/marko-starter-demo"
+    "url": "https://github.com/abiyasa/marko-dom-node-bugs"
   },
   "license": "MIT",
   "devDependencies": {
@@ -50,6 +50,6 @@
   "eslintIgnore": [
     "*.marko.js"
   ],
-  "author": "I. Abiyasa Suhardi",
+  "author": "I. Abiyasa Suhardi <ilham.suhardi@gmail.com>",
   "private": true
 }
