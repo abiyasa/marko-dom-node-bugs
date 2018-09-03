@@ -2,6 +2,12 @@
 
 This repo is a place to reproduce DOM node bugs on [Marko](https://markojs.com/) component.
 
+**NOTE**: All bugs here are already fixed on the latest Marko 4.13.0 🎊🎉 For the details, please see:
+
+- https://github.com/marko-js/marko/issues/1052 
+- https://github.com/marko-js/marko/issues/1051
+
+
 ## Install
 
 We use Node.js v8.11.1, Marko v4.9.7, and the latest Yarn.
